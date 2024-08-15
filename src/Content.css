@@ -26,3 +26,15 @@ h1 div {
     font-weight: 200;
     color: #f0f0f0;
 }
+
+.content button {
+    width: 150px;
+    padding: 15px;
+    margin-top: 20pc;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    background-color:#0c0c0c;
+    border-radius: 30px;
+    color: white;
+}
