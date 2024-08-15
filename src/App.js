@@ -4,14 +4,19 @@ import './App.css';
 import Header from './Header';
 import Content from './Content';
 import Images from './Images';
+//gsap
+import { gsap, Power3 } from 'gsap';
 
 function App() {
+  //gsap
+  let tl = new gsap.timeline(),
+    ease = Power3.easeOut();
   return (
     <div className="hero">
-      <Header />
+      <Header timeline={tl} ease={ease} />
       <div className='container'>
-        <Content />
-        <Images />
+        <Content timeline={tl} />
+        <Images timeline={tl} ease={ease} />
       </div>
     </div>
   );
